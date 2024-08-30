@@ -1,0 +1,206 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Ensure the background covers the full viewport height */
+    background: linear-gradient(270deg, #250203, #1e90ff, #0d0f0d, #14ffff, #0400ff);
+    background-size: 1500% 1500%;
+    animation: gradientAnimation 15s ease infinite;
+}
+
+/* Gradient Animation Keyframes */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    animation: backgroundAnimation 10s infinite alternate;
+}
+
+h1, h2 {
+    border-bottom: 2px solid #f9f1f1;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #e9d8d8;
+    
+}
+
+#studentDetails {
+    background-color: rgb(7, 1, 1);
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0px 0px 10px rgba(94, 6, 6, 0.1);
+}
+
+#studentInfo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.studentCard {
+    background-color: #f76767;
+    width: 45%;
+    margin: 10px;
+    padding: 15px;
+    box-shadow: 0px 0px 10px rgba(76, 65, 65, 0.1);
+    border-radius: 5px;
+}
+
+.studentCard h3 {
+    margin-top: 0;
+    color: #e9d8d8;
+}
+
+.studentDetails, .marks, .attendance {
+    margin: 10px 0;
+}
+
+.studentDetails p, .marks p, .attendance p {
+    margin: 5px 0;
+}
+
+button {
+    background-color: #333;
+    color: rgb(251, 243, 243);
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #de0606;
+}
+
+
+
+.foot {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    animation: backgroundAnimation 10s infinite alternate;
+}
+.back{
+    width: 400px;
+    height:100px;
+    margin-left: 600px;
+    margin-top: 0px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    animation: sectionAnimation 5s infinite alternate ease-in-out;
+}
+/* Animated Background */
+@keyframes backgroundAnimation {
+    0% { background-color: #06022a; }
+    25% { background-color: #011702; }
+    50% { background-color: #4f21f3; }
+    75% { background-color: #410505; }
+    100% { background-color: #120101; }
+}
+
+/* Section Animation */
+@keyframes sectionAnimation {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+.back1{
+    width: 300px;
+    height:100px;
+    margin-left: 600px;
+    margin-top: 50px;
+    background-color: #2a10ee;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    animation: sectionAnimation 5s infinite alternate ease-in-out;
+}
+.back1:hover{
+    background-color: #e70606;
+}
+/* Animated Background */
+@keyframes backgroundAnimation {
+    0% { background-color: #06022a; }
+    25% { background-color: #011702; }
+    50% { background-color: #4f21f3; }
+    75% { background-color: #410505; }
+    100% { background-color: #120101; }
+}
+
+/* Section Animation */
+@keyframes sectionAnimation {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+input, textarea, button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+
+.back:hover {
+    background-color: #e70606;
+}
+
+/* Footer Styling */
+.foot {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    animation: backgroundAnimation 10s infinite alternate;
+    margin-top: 100px;
+}
+#subjectsContainer{
+    display: flex;
+    width: 400px;
+    height: 300px;
+    margin-left: 00px;
+}
+.back2{
+    width: 300px;
+    height:100px;
+    margin-left: 600px;
+    margin-top: 80px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    animation: sectionAnimation 5s infinite alternate ease-in-out;
+}
+.back2:hover{
+    background-color: #e70606;
+}
+#subjectName{
+    color: wheat;
+    margin-top: 100px;
+    font-size: large;
+    height: 50px;
+    width: 400px;
+}

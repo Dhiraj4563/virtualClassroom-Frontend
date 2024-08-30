@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classroom - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Dhiraj Virtual Classroom</h1>
+    </header>
+    <main>
+        <section id="news" class="horizontal-section">
+            <h2>Updated  News</h2>
+            <div id="newsContainer">
+                <!-- News will be dynamically added here -->
+                 <h4><strong>6 students got placed in Navikenj.</strong></h4>
+            </div>
+        </section>
+
+        <section id="contact" class="horizontal-section">
+            <h2>Contact Teacher</h2>
+            <form id="contactForm">
+                <input type="email" id="teacherEmail" placeholder="Teacher's Email" required>
+                <input type="email" id="studentEmail" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Email</button>
+            </form>
+        </section>
+        <section class="classes">
+            <button onclick="window.location.href='student_teacher.html'">Go to Classroom</button>
+        </section >
+        <section class="video">
+           
+        <button onclick="window.location.href='video.html'">Video Sessions</button>
+        </section>
+    </main>
+
+    <footer>
+       <strong>@Dhiraj Says,"Education is the only key".</strong>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

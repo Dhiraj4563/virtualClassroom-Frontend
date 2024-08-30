@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Ensure the background covers the full viewport height */
+    background: linear-gradient(270deg, #250203, #1e90ff, #0d0f0d, #14ffff, #0400ff);
+    background-size: 1500% 1500%;
+    animation: gradientAnimation 15s ease infinite;
+}
+
+/* Gradient Animation Keyframes */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    animation: backgroundAnimation 10s infinite alternate;
+}
+.horizontal-section {
+    width: 48%;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 380px;
+    border-radius: 10px;
+    animation: sectionAnimation 5s infinite alternate ease-in-out;
+}
+
+.section-link{
+    width: 400px;
+    height: 100px;
+    margin-left: 250px;
+    margin-top: 150px;
+    color: wheat;
+    align-items: center;
+    text-align: center;
+    background-color: #333;
+}
+.section-link:hover{
+    background-color: #e70606;
+}
+main{
+
+}
+.foot{
+    margin-top: 100px;
+}
+.back1{
+    width: 300px;
+    height:100px;
+    margin-left: 600px;
+    margin-top: 50px;
+    background-color: #2a10ee;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    animation: sectionAnimation 5s infinite alternate ease-in-out;
+}
+.back1:hover{
+    background-color: #e70606;
+}
+/* Animated Background */
+@keyframes backgroundAnimation {
+    0% { background-color: #06022a; }
+    25% { background-color: #011702; }
+    50% { background-color: #4f21f3; }
+    75% { background-color: #410505; }
+    100% { background-color: #120101; }
+}
+
+/* Section Animation */
+@keyframes sectionAnimation {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+input, textarea, button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+
+.back:hover {
+    background-color: #e70606;
+}
+
+/* Footer Styling */
+.foot {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    animation: backgroundAnimation 10s infinite alternate;
+    margin-top: 100px;
+}
+#videoList{
+    display: flex;
+    width: 200px;
+    height: 200px;
+}
+.back2{
+    width: 300px;
+    height:100px;
+    margin-left: 600px;
+    margin-top: 80px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    animation: sectionAnimation 5s infinite alternate ease-in-out;
+}
+.back2:hover{
+    background-color: #e70606;
+}
+#videoUpload{
+    color: wheat;
+    margin-left: 40%;
+    font-size: xx-large;
+}
